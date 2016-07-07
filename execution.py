@@ -57,6 +57,7 @@ def avalia_trigger(condition_id, state):
     #del lll[0]
 
 def make_func(trigger):
+
     def _function():
         '''
             recuper a fila da trigger X
@@ -65,6 +66,7 @@ def make_func(trigger):
         '''
         dao = DAO()
         fila_wedStates_wedTriggers = dao.select_fila(trigger.id)
+
         print("..............INICIO.................", trigger.id)
 
         # update status para processando (feito)

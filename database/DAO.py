@@ -35,7 +35,7 @@ class DAO:
 
     def __del__(self):
         # self.session.close_all()
-        # self.Session.remove()
+        # self.session.close()
         # self.engine
         pass
 
